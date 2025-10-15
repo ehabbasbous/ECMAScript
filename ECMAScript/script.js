@@ -22,7 +22,8 @@ if (true) {
   }
 }
 sayHi();
-
+//The function sayHi is declared inside the block (if), so it’s not visible outside that block in strict mode.
+//Therefore, calling sayHi() outside causes a ReferenceError.
 //ex4
 let user = {};
 user.name = "John";
@@ -67,3 +68,4 @@ let message =
     : login == ""
     ? "No login"
     : "";
+
